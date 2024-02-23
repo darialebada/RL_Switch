@@ -16,7 +16,6 @@ Pornirea manuala a switch-urilor:
 
 
 ## Tabela de Comutare
-- Am realizat-o dupa pseudocodul dat in cerinta temei, abia pentru a doua cerinta am avut de facut modificari.
 - Folosesc un HashMap in care voi asocia fiecarei adrese MAC un port (drumul catre acea adresa MAC).
 - Daca am broadcast (adresa MAC destinatie este ff.ff.ff.ff.ff.ff), atunci trimit datele pe toate porturile,
 mai putin catre cel de pe care am primit.
@@ -33,7 +32,6 @@ dictionarul meu de vlan-uri, iar daca am legatura de tip trunk o sa elimin tag-u
 de tip trunk, caz in care trebuie sa adaug tag.
 
 ## STP
-- Am rezolvat partea aceasta dupa pseudocodul explicat in cerinta temei.
 - Am adaugat inca un HashMap in care retin starile porturilor. Pentru simplitate, folosesc doar starile
 "listening" si "blocking" (porturile root si designated sunt implicit in starea "listening").
 - functia send_bdpu_every_second() va trimite cate un cadru de tip BPDU la fiecare secunda catre toate porturile
